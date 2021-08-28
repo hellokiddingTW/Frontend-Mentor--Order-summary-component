@@ -1,0 +1,194 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+.bg {
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.bdrs--top {
+  border-radius: 16px 16px 0 0;
+}
+
+.bdrs--bottom {
+  border-radius: 0 0 16px 16px;
+}
+
+.card {
+  font-family: 'Red Hat Display', sans-serif;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.card > img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.card .card__content {
+  padding: 20px 16px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card .card__content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card .card__content p {
+  width: 0;
+  min-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #7280a7;
+}
+
+.card .card__content .card__content__btn {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card .card__content .btn--color--blue {
+  background-color: #3829e0;
+  color: #fff;
+  margin-bottom: 16px;
+  -webkit-box-shadow: 0 5px 10px rgba(56, 41, 224, 0.5);
+          box-shadow: 0 5px 10px rgba(56, 41, 224, 0.5);
+}
+
+.card .card__content .btn--color--blue:hover {
+  background-color: rgba(56, 41, 224, 0.7);
+}
+
+.card .card__content .btn--color--white {
+  background-color: #fff;
+  color: #7280a7;
+}
+
+.card .card__content .btn--color--white:hover {
+  color: #1f2f56;
+}
+
+.card__ontent__planBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f7ff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card__ontent__planBox img {
+  margin-right: 16px;
+}
+
+.card__ontent__planBox h2 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__ontent__planBox span {
+  color: #7280a7;
+}
+
+.card__ontent__planBox a:hover {
+  text-decoration: none;
+  color: #3829e0;
+}
+
+.card__ontent__planBox .card__ontent__planBox--auto {
+  margin-left: auto;
+}
+
+@media (min-width: 546px) {
+  .bg {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: contain;
+  }
+  .card .card__content {
+    padding: 50px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
