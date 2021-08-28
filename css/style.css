@@ -57,6 +57,7 @@ blockquote, q {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #e0e8ff;
+  height: 100vh;
 }
 
 .container {
